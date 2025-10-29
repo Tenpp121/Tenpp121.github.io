@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>安全锁检验报告</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Microsoft YaHei", Arial, sans-serif;
+            line-height: 1.6;
+            margin: 15px auto;
+            padding: 0 15px;
+            max-width: 100%;
+            color: #2c3e50;
+            background-color: #f9f9f9;
+        }
+        .report-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+        }
+        .report-header {
+            text-align: center; /* 标题居中关键样式 */
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #3498db;
+        }
+        .report-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 6px;
+        }
+        .report-no {
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+        .info-table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 25px;
+        }
+        .info-table th, .info-table td {
+            border: 1px solid #ddd;
+            padding: 8px 10px;
+            text-align: left;
+            font-size: 14px;
+        }
+        .info-table th {
+            background-color: #f5f7fa;
+            font-weight: 600;
+            color: #34495e;
+            width: 30%;
+        }
+        .test-section {
+            margin-bottom: 30px;
+        }
+        .section-header {
+            font-size: 16px;
+            font-weight: 600;
+            color: #3498db;
+            margin-bottom: 12px;
+            padding-left: 10px;
+            border-left: 4px solid #3498db;
+        }
+        .test-table {
+            border-collapse: collapse;
+            width: 100%;
+            font-size: 14px;
+        }
+        .test-table th, .test-table td {
+            border: 1px solid #ddd;
+            padding: 8px 10px;
+            word-break: break-all;
+        }
+        .test-table th {
+            background-color: #f5f7fa;
+            font-weight: 600;
+            color: #34495e;
+        }
+        .test-result {
+            color: #27ae60;
+            font-weight: 500;
+        }
+        .conclusion-section {
+            margin-top: 35px;
+            padding-top: 20px;
+            border-top: 2px dashed #ddd;
+        }
+        .conclusion-item {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #2c3e50;
+            margin-bottom: 12px;
+        }
+        .conclusion-key {
+            font-weight: 600;
+            color: #e74c3c;
+        }
+        .validity-tag {
+            display: inline-block;
+            padding: 3px 8px;
+            background-color: #e3f2fd;
+            color: #1976d2;
+            border-radius: 4px;
+            margin-left: 6px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="report-container">
+        <div class="report-header">
+            <div class="report-title">安全锁检验报告</div>
+            <div class="report-no">报告编号：AQS-202547444</div>
+        </div>
+
+        <table class="info-table">
+            <tr>
+                <th>委托单位</th>
+                <td>肥城金泰建设工程有限公司福建LNG接收站项目</td>
+            </tr>
+            <tr>
+                <th>工程名称</th>
+                <td>福建LNG接收站项目储转工程</td>
+            </tr>
+            <tr>
+                <th>联系人员</th>
+                <td>赵伟</td>
+            </tr>
+            <tr>
+                <th>联系电话</th>
+                <td>18766642503</td>
+            </tr>
+            <tr>
+                <th>制造单位</th>
+                <td>无锡强辉建筑机械有限公司</td>
+            </tr>
+            <tr>
+                <th>制造日期</th>
+                <td>2022年08月</td>
+            </tr>
+            <tr>
+                <th>型号规格</th>
+                <td>LSF30</td>
+            </tr>
+            <tr>
+                <th>产品编号</th>
+                <td>58347</td>
+            </tr>
+            <tr>
+                <th>检验日期</th>
+                <td>2025年08月18日</td>
+            </tr>
+            <tr>
+                <th>检验设备/状态</th>
+                <td>安全锁测试仪（正常）</td>
+            </tr>
+        </table>
+
+        <div class="test-section">
+            <div class="section-header">1. 锁绳角度检验</div>
+            <table class="test-table">
+                <tr>
+                    <th>检验项目</th>
+                    <th>技术要求</th>
+                    <th>检验结果</th>
+                    <th>检验结论</th>
+                </tr>
+                <tr>
+                    <td>锁绳角度</td>
+                    <td>≤14°</td>
+                    <td>
+                        Ⅰ：4.0°<br>
+                        Ⅱ：3.8°<br>
+                        Ⅲ：3.6°
+                    </td>
+                    <td class="test-result">合格</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="test-section">
+            <div class="section-header">2. 锁绳距离检验</div>
+            <table class="test-table">
+                <tr>
+                    <th>检验项目</th>
+                    <th>技术要求</th>
+                    <th>检验结果</th>
+                    <th>检验结论</th>
+                </tr>
+                <tr>
+                    <td>锁绳距离</td>
+                    <td>≤500mm</td>
+                    <td>
+                        Ⅰ：161mm<br>
+                        Ⅱ：150mm<br>
+                        Ⅲ：141mm
+                    </td>
+                    <td class="test-result">合格</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="conclusion-section">
+            <div class="conclusion-item">
+                <span class="conclusion-key">检验结论：</span>
+                经专业设备检验，该安全锁样品各项指标均符合《GB/T19155-2017 高处作业吊篮》标准规定，判定为合格。
+            </div>
+            <div class="conclusion-item">
+                <span class="conclusion-key">报告有效期：</span>
+                自检验完成之日起至 <span class="validity-tag">2026年08月17日</span> 止，逾期需重新检验。
+            </div>
+        </div>
+    </div>
+</body>
+</html>
